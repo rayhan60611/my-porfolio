@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Thin.otf") format("opentype");
+  font-weight: 100;
+  src: local("NotoSansJP");
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP");
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Light.otf")
+    format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Regular.otf")
+    format("opentype");
+  src: local("NotoSansJP");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP");
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP");
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: local("NotoSansJP");
+  src: url("./assets/fonts/Nato_Sans_JP/NotoSansJP-Black.otf")
+    format("opentype");
+
+  font-weight: 900;
+}
+
+:root {
+  --text: #8d8d8d;
+  --text-rgb: 141, 141, 141;
+  --background: #1d1d1d;
+  --background-rgb: 29, 29, 29;
+  --background-second: #2b2b2b;
+  --background-second-rgb: 43, 43, 43;
+  --accent: #ffea00;
+  --accent-rgb: 255, 234, 0;
+  --red: #ef271b;
+  --red-rgb: 239, 39, 27;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: NotoSansJP, sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+}

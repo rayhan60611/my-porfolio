@@ -1,0 +1,90 @@
+.Container {
+  position: relative;
+  overflow: hidden;
+}
+
+.Root {
+  display: block;
+  width: 100%;
+  color: var(--text);
+  background: var(--background-second);
+  font-size: 1.6rem;
+  padding: 1.6rem 2rem;
+  border: 0;
+  resize: none;
+  font-family: inherit;
+}
+
+.Root + .Label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  transform: translate3d(-100%, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.Root:focus {
+  outline: 0;
+}
+
+.Root:focus + .Label {
+  transform: translate3d(0, 0, 0);
+}
+
+.Label.Error {
+  background: var(--red);
+  transform: translate3d(0, 0, 0);
+}
+
+.Root:focus::placeholder {
+  color: transparent;
+}
+
+.Root::-webkit-input-placeholder {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.Root::-moz-placeholder {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.Root:-ms-input-placeholder {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.Root::-ms-input-placeholder {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.Root::placeholder {
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.Root::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 4rem;
+}
+
+/* Track */
+.Root::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+/* Handle */
+.Root::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 4rem;
+}
+
+/* Handle on hover */
+.Root::-webkit-scrollbar-thumb:hover {
+  background: rgba(var(--text-rgb), 0.8);
+}
