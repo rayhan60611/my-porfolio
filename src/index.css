@@ -52,8 +52,10 @@
   --background-rgb: 29, 29, 29;
   --background-second: #2b2b2b;
   --background-second-rgb: 43, 43, 43;
-  --accent: #ffea00;
-  --accent-rgb: 255, 234, 0;
+  --accent: yellow;
+  --accent-rgb: 255, 255, 0;
+  --accent-alt: #3DA5D9;
+  --accent-alt-rgb: 61, 165, 217;
   --red: #ef271b;
   --red-rgb: 239, 39, 27;
 }

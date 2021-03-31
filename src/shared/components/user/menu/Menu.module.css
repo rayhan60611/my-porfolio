@@ -1,0 +1,99 @@
+.Root {
+  background: #181818;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.Head {
+  display: none;
+}
+
+.NavItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavItem {
+  flex: 1;
+}
+
+.NavItem:not(:nth-last-child(2)) {
+  border-right: 1px solid var(--background-second);
+}
+
+.NavHidden {
+  display: none;
+}
+
+.NavLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.NavLink > svg {
+  margin-bottom: 0.6rem;
+}
+
+.NavLink:hover,
+.NavActive {
+  color: var(--accent);
+}
+
+@media (min-width: 769px) {
+  .Root {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+  }
+
+  .Head {
+    display: inline-flex;
+    background: #000;
+    align-items: center;
+    height: 100px;
+  }
+
+  .Nav {
+    margin-top: 0.8rem;
+    width: 100%;
+  }
+
+  .NavItems {
+    flex-direction: column;
+  }
+
+  .NavItem {
+    width: 100%;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--background-second);
+  }
+
+  .NavHidden {
+    display: initial;
+  }
+
+  .NavLink {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .NavLink > svg {
+    margin-right: 1.3rem;
+    margin-bottom: 0;
+  }
+}

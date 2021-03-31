@@ -1,15 +1,23 @@
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 import "./App.css";
+// import Logo from "./shared/components/ui/logo/Logo";
+import Menu from "./shared/components/user/menu/Menu";
 
-import Button from "./shared/components/button/Button";
-import Input from "./shared/components/input/Input";
+// import Button from "./shared/components/ui/button/Button";
+// import Input from "./shared/components/ui/input/Input";
 
 function App() {
-  const [state, setState] = useState("");
-  const ref = useRef<HTMLInputElement>(null);
+  // const [state, setState] = useState("");
+  // const ref = useRef<HTMLInputElement>(null);
   return (
     <div className="App">
-      <Input
+      <Menu />
+      {/* <div
+        style={{ padding: "10px", background: "red", display: "inline-block" }}
+      >
+        <Logo classes={{ root: "Logo" }} />
+      </div> */}
+      {/* <Input
         ref={ref}
         placeholder="Name"
         onChange={(e) => {
@@ -24,7 +32,7 @@ function App() {
       <br />
       <Button type="button" disabled pending>
         Contact Me!
-      </Button>
+      </Button> */}
     </div>
   );
 }

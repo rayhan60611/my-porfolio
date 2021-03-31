@@ -1,4 +1,9 @@
 .App {
-    width: 300px;
-    margin: 10px;
+  width: 300px;
+  margin: 10px;
+}
+
+.Logo {
+  
+  display: block;
 }
