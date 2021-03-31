@@ -54,7 +54,7 @@
   --background-second-rgb: 43, 43, 43;
   --accent: yellow;
   --accent-rgb: 255, 255, 0;
-  --accent-alt: #3DA5D9;
+  --accent-alt: #3da5d9;
   --accent-alt-rgb: 61, 165, 217;
   --red: #ef271b;
   --red-rgb: 239, 39, 27;
@@ -78,4 +78,25 @@ body {
   font-family: NotoSansJP, sans-serif;
   background: var(--background);
   color: var(--text-color);
+}
+
+.bx-sh {
+  -webkit-box-shadow: rgb(61 165 217 / 20%) 0px 2px 1px -1px,
+    rgb(61 165 217 / 14%) 0px 1px 1px 0px, rgb(61 165 217 / 12%) 0px 1px 3px 0px;
+  box-shadow: rgb(61 165 217 / 20%) 0px 2px 1px -1px,
+    rgb(61 165 217 / 14%) 0px 1px 1px 0px, rgb(61 165 217 / 12%) 0px 1px 3px 0px;
+}
+
+.bx-sh2 {
+  -webkit-box-shadow: rgb(61 165 217 / 20%) 0px 3px 1px -2px,
+    rgb(61 165 217 / 14%) 0px 2px 2px 0px, rgb(61 165 217 / 12%) 0px 1px 5px 0px;
+  box-shadow: rgb(61 165 217 / 20%) 0px 3px 1px -2px,
+    rgb(61 165 217 / 14%) 0px 2px 2px 0px, rgb(61 165 217 / 12%) 0px 1px 5px 0px;
+}
+
+.bx-sh3 {
+  -webkit-box-shadow: rgb(61 165 217 / 20%) 0px 3px 3px -2px,
+    rgb(61 165 217 / 14%) 0px 3px 4px 0px, rgb(61 165 217 / 12%) 0px 1px 8px 0px;
+  box-shadow: rgb(61 165 217 / 20%) 0px 3px 3px -2px,
+    rgb(61 165 217 / 14%) 0px 3px 4px 0px, rgb(61 165 217 / 12%) 0px 1px 8px 0px;
 }

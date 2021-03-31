@@ -1,9 +1,29 @@
 .App {
-  width: 300px;
-  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.Logo {
-  
-  display: block;
+.Main {
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+}
+
+@media (min-width: 769px) {
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Main {
+    width: calc(100vw - 150px);
+    height: 100vh;
+    order: 2;
+  }
+
+  .Sidebar {
+    width: 150px;
+    height: 100vh;
+    order: 1;
+  }
 }

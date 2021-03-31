@@ -8,7 +8,7 @@ export interface IRoute {
   hiddenable: boolean;
 }
 
-const ROUTES: { [key: string]: IRoute } = {
+const ROUTES: { readonly [key: string]: IRoute } = {
   home: {
     name: "Home",
     path: "/",

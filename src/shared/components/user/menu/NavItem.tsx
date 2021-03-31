@@ -17,11 +17,12 @@ const NavItem: FC<Props> = ({ route }) => {
       }`}
     >
       <NavLink
+        exact={route.path === "/"}
         className={`${styles.NavLink}`}
         activeClassName={`${styles.NavActive}`}
         to={route.path}
       >
-        {<route.icon/>}
+        {<route.icon />}
         {route.name}
       </NavLink>
     </li>
