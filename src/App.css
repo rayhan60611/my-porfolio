@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: var(--background);
 }
 
 .Main {
@@ -16,7 +17,7 @@
   }
 
   .Main {
-    width: calc(100vw - 150px);
+    width: calc(100% - 150px);
     height: 100vh;
     order: 2;
   }
@@ -25,5 +26,12 @@
     width: 150px;
     height: 100vh;
     order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

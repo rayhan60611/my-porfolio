@@ -1,0 +1,196 @@
+.Root {
+  height: calc(100vh - 65px);
+  width: 100%;
+  position: relative;
+  background: black;
+  padding: 3.5rem 1rem;
+}
+
+.DiscoverMe {
+  user-select: none;
+  position: absolute;
+  z-index: 30;
+  bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-alt);
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: var(--accent-alt);
+  writing-mode: vertical-rl;
+  animation: upDown 1s linear infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.DiscoverMe:first-child {
+  left: 1rem;
+}
+
+.DiscoverMe:last-child {
+  right: 1rem;
+}
+
+.DiscoverMe > svg {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.Background {
+  overflow: hidden;
+  background: black;
+  position: relative;
+  height: 100%;
+}
+
+.MyImage {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 320px;
+  width: 300px;
+}
+
+.Headline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(var(--background-rgb), 0.8);
+  color: #fff;
+  z-index: 10;
+  padding: 0 3.2rem;
+  padding-top: 10rem;
+}
+
+.Headline h1 {
+  margin: 0;
+}
+
+.Headline span {
+  font-size: 4.5rem;
+  line-height: 4.8rem;
+  user-select: none;
+  display: inline-block;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.Headline span:hover {
+  color: var(--accent-alt);
+  animation-name: rubberBand;
+}
+
+.Designation {
+  color: #ccc;
+  font-size: 2rem !important;
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.Btn {
+  padding: 1.3rem 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+}
+
+.SocialLinks {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.SocialLink {
+  margin-right: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 1.8rem;
+}
+
+.SocialLink:hover {
+  color: #000;
+  background: var(--accent);
+}
+
+@keyframes rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .Headline span {
+    font-size: 5.5rem;
+  line-height: 5.8rem;
+  }
+
+  .MyImage {
+    left: auto;
+    right: 3.2rem;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Root {
+    height: 100vh;
+  }
+
+  .Headline span {
+    font-size: 8rem;
+    line-height: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .Headline span {
+    font-size: 8.3rem;
+    line-height: 7.5rem;
+  }
+}

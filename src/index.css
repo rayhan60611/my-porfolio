@@ -54,10 +54,15 @@
   --background-second-rgb: 43, 43, 43;
   --accent: yellow;
   --accent-rgb: 255, 255, 0;
-  --accent-alt: #3da5d9;
-  --accent-alt-rgb: 61, 165, 217;
+  --accent-alt: #08fdd8;
+  --accent-alt-rgb: 8, 253, 216;
   --red: #ef271b;
   --red-rgb: 239, 39, 27;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
 }
 
 *,
@@ -76,7 +81,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: NotoSansJP, sans-serif;
-  background: var(--background);
+  background: #000;
   color: var(--text-color);
 }
 
