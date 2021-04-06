@@ -1,11 +1,11 @@
 .Root {
   color: var(--accent);
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .Root span {
-  font-size: 4.5rem;
-  line-height: 4.2rem;
+  font-size: 4rem;
+  line-height: 3.7rem;
   user-select: none;
   display: inline-block;
 }
@@ -46,14 +46,14 @@
 
 @media screen and (min-width: 769px) {
   .Root span {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     line-height: 6rem;
   }
 }
 
 @media screen and (min-width: 993px) {
   .Root span {
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     line-height: 6rem;
   }
 }

@@ -1,0 +1,78 @@
+.Root {
+  cursor: pointer;
+  position: relative;
+  min-height: 200px;
+}
+
+.Upper,
+.Inner {
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s linear;
+}
+
+.Img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Upper {
+  transform: perspective(600px) rotateY(0);
+}
+
+.Inner {
+  background: var(--background-second);
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.Root:hover > .Upper {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.Root:hover > .Inner {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.Title {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-alt);
+}
+
+.SubTitle {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.Technologies {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Pill {
+  color: var(--accent-alt);
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.4rem;
+}
+.Pill {
+  border: 1px solid var(--text);
+}
+
+.Btn {
+  padding: 0.5rem 1rem;
+}

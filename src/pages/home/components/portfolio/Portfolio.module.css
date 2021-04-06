@@ -1,3 +1,10 @@
 .Root {
   padding: 2rem;
 }
+
+.Projects {
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: .8rem;
+}

@@ -1,14 +1,16 @@
 import { FiArrowDown } from "react-icons/fi";
 
+import img from "../../../../assets/images/my-image2.png";
 import Headline from "./Headline";
-import MyImage from "./MyImage";
+// import MyImage from "./MyImage";
 import styles from "./Introduction.module.css";
 
 const Introduction = () => {
   return (
     <section className={`${styles.Root}`}>
       <div className={`${styles.Background}`}>
-        <MyImage />
+        <img src={img} alt="my-profile" />
+        {/* <MyImage /> */}
       </div>
       <Headline />
       <span className={`${styles.DiscoverMe}`}>

@@ -2,7 +2,6 @@
   height: calc(100vh - 65px);
   width: 100%;
   position: relative;
-  background: black;
   padding: 3.5rem 1rem;
 }
 
@@ -50,18 +49,8 @@
 
 .Background {
   overflow: hidden;
-  background: black;
   position: relative;
   height: 100%;
-}
-
-.MyImage {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 320px;
-  width: 300px;
 }
 
 .Headline {
@@ -70,7 +59,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(var(--background-rgb), 0.8);
+  background: rgba(var(--background-rgb), 0.5);
   color: #fff;
   z-index: 10;
   padding: 0 3.2rem;
@@ -165,21 +154,30 @@
 }
 
 @media screen and (min-width: 577px) {
-  .Headline span {
-    font-size: 5.5rem;
-  line-height: 5.8rem;
+  .Background {
+    display: flex;
+    justify-content: center;
   }
 
-  .MyImage {
-    left: auto;
-    right: 3.2rem;
-    transform: translateX(0);
+  .Background > img {
+    max-width: 600px;
+    max-height: 450px;
+  }
+
+  .Headline span {
+    font-size: 5.5rem;
+    line-height: 5.8rem;
   }
 }
 
 @media screen and (min-width: 769px) {
   .Root {
     height: 100vh;
+  }
+
+  .Background {
+    padding: 0 3rem;
+    justify-content: flex-end;
   }
 
   .Headline span {
@@ -192,5 +190,11 @@
   .Headline span {
     font-size: 8.3rem;
     line-height: 7.5rem;
+  }
+}
+
+@media (min-height: 768px) {
+  .Root {
+    height: 768px;
   }
 }
